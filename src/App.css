@@ -1,0 +1,11 @@
+.toTopButton{
+    position: fixed;
+    bottom: 12%;
+    right: 3%;
+    background: red;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: #FFF;
+    font-weight: 500;
+    z-index: 99999;
+}

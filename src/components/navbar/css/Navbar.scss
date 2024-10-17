@@ -1,0 +1,163 @@
+.navbar__main {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 2vh;
+}
+
+.nav__logo {
+  font-family: cursive;
+  color: #da002b;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.nav__btn {
+  background: #fff;
+  padding: 0 26px;
+  height: 34px;
+  border: 2px solid #111;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: ease 0.4s;
+  cursor: pointer;
+}
+
+.nav__btn:hover {
+  border-color: #da002b;
+  color: #da002b;
+}
+
+.nav__search {
+  flex: 1;
+  height: 34px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  overflow: hidden;
+}
+
+.nav__search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  text-indent: 16px;
+}
+
+.nav__search button {
+  width: 70px;
+  border: none;
+  outline: none;
+  background: #da002b;
+  color: #fff;
+  svg {
+    font-size: 20px;
+  }
+}
+
+.nav__collection {
+  display: flex;
+  gap: 30px;
+}
+
+.nav__item {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  transition: ease 0.4s;
+  flex-direction: column;
+  align-items: center;
+  span {
+    font-size: 14px;
+  }
+}
+
+.nav__wishlist {
+  position: relative;
+}
+.heart__counter {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  z-index: 5;
+  background: red;
+  color: #fff;
+  padding: 0px 4px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.nav__item:hover {
+  color: #da002b;
+}
+
+.nav__item svg {
+  font-size: 25px;
+}
+
+.nav__item:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .nav__collection {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 -3px 5px #0001;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 11;
+  }
+
+  .nav__item {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .nav__item span {
+    font-size: 12px;
+  }
+
+  .nav__item:first-child {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__main {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px 20px;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .nav__search {
+    flex: auto;
+    width: 100%;
+  }
+
+  .nav__btn span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .navbar__top {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav__item span {
+    display: none;
+  }
+}

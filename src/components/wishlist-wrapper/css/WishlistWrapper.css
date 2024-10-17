@@ -1,0 +1,35 @@
+.wishlist__wrapper__container {
+  margin-top: 10vh;
+}
+.wishlist__wrapper__container .wishlist__wrapper .wishlist__wrapper__item {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 3vh 0;
+}
+.wishlist__wrapper__container .wishlist__wrapper .image img {
+  max-height: 100px;
+  width: 100px;
+}
+.wishlist__wrapper__container .wishlist__wrapper .actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.wishlist__wrapper__container .wishlist__wrapper .price del {
+  color: red;
+}
+.wishlist__wrapper__container .wishlist__wrapper .price p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 568px) {
+  .wishlist__wrapper {
+    text-align: center;
+  }
+  .wishlist__wrapper .actions {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=WishlistWrapper.css.map */

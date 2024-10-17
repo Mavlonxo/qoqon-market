@@ -1,0 +1,41 @@
+.wishlist__wrapper__container {
+  margin-top: 10vh;
+  .wishlist__wrapper {
+    .wishlist__wrapper__item {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 3vh 0;
+    }
+    .image {
+      img {
+        max-height: 100px;
+        width: 100px;
+      }
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+    .price {
+      del {
+        color: red;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .wishlist__wrapper {
+    text-align: center;
+    .actions {
+      justify-content: center;
+    }
+  }
+}

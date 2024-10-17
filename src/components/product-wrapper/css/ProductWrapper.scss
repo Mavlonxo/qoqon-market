@@ -1,0 +1,149 @@
+.product__wrapper__container {
+  h3 {
+    color: #858997;
+  }
+}
+.product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  .card {
+    width: 266px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h3 {
+      font-weight: normal;
+      font-size: 18px;
+      transition: 0.4s;
+    }
+    del {
+      color: rgb(247, 84, 84);
+    }
+    .card__image {
+      height: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      img {
+        height: 80%;
+        width: 80%;
+        object-fit: contain;
+        transition: 0.3s;
+        margin: 5px 20px;
+      }
+    }
+  }
+  .card:hover .card__image img {
+    transform: scale(1.05);
+  }
+  .card:hover h3 {
+    color: #218dff;
+    cursor: pointer;
+  }
+  .card__rating {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .card__rate svg {
+      color: #218dff;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+  .card__heart {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background: none;
+    border: none;
+    svg {
+      font-size: 25px;
+      color: #b9b9b9;
+      transition: ease 0.4s;
+    }
+  }
+  .card__cart {
+    position: absolute;
+    background: none;
+    border: none;
+    top: 10px;
+    right: 10px;
+    svg {
+      font-size: 25px;
+      color: #b9b9b9;
+      transition: ease 0.4s;
+    }
+  }
+  .card__heart:hover svg {
+    color: #218dff;
+  }
+  .card__cart:hover svg {
+    color: #218dff;
+  }
+  .card__price p {
+    font-size: 20px;
+  }
+  .taptoCart {
+    position: absolute;
+    bottom: 0%;
+    width: 95%;
+  }
+  .taptoCart p {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .product__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .card {
+      width: auto;
+      .card__rating {
+        gap: 8px;
+        svg {
+          font-size: 10px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      h3 {
+        font-size: 15px;
+      }
+      .card__price {
+        del {
+          font-size: 15px;
+        }
+        p {
+          font-size: 17px;
+        }
+      }
+      .card__monthly {
+        span {
+          font-size: 14px;
+        }
+      }
+      .taptoCart {
+        p {
+          margin: 0;
+          padding: 0;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

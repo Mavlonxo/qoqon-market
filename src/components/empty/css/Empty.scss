@@ -1,0 +1,12 @@
+.empty__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  svg {
+    font-size: 18px;
+    color: red;
+  }
+}

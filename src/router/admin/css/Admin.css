@@ -1,0 +1,66 @@
+.admin__panel {
+  display: flex;
+}
+.admin__panel .sidebar {
+  width: 350px;
+  height: 100%;
+  background: #0071cc;
+  padding: 30px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.admin__panel .sidebar a {
+  width: 250px;
+  margin: 1vh 0;
+}
+.admin__panel .sidebar .to__home {
+  margin-bottom: 2vh;
+}
+.admin__panel .admin__inform {
+  flex: 1;
+  height: 100%;
+}
+.admin__panel .admin__inform .information {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.admin__panel .admin__inform .details {
+  display: flex;
+  justify-content: space-between;
+}
+.admin__panel .create__product {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.admin__panel .create__product form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.admin__panel .create__product form input {
+  margin: 1vh 0;
+}
+
+.deliveryInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+}
+.deliveryInfo .detail {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  gap: 15px;
+}
+.deliveryInfo .detail p {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=Admin.css.map */
